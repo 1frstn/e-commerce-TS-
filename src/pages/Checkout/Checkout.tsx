@@ -1,5 +1,3 @@
-// CheckoutPage.tsx
-
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useAppSelector } from "../../app/store";
@@ -10,7 +8,6 @@ const CheckoutPage: React.FC = () => {
     (state) => state.basket.products
   );
 
-  // Calculate total price of all items in the basket
   const getTotalPrice = (): number => {
     return products.reduce(
       (total, item) => total + item.price * item.amount!,
@@ -45,12 +42,10 @@ const CheckoutPage: React.FC = () => {
           <div className="shipping-address">
             <h2>Shipping Address</h2>
             <Form>
-              {/* Shipping address form fields */}
               <Form.Group controlId="formAddress">
                 <Form.Label>Address</Form.Label>
                 <Form.Control type="text" placeholder="Enter address" />
               </Form.Group>
-              {/* Add more form fields for city, state, zip code, etc. */}
               <div className="buttons">
                 <Button variant="primary">Save Address</Button>
               </div>
@@ -63,12 +58,11 @@ const CheckoutPage: React.FC = () => {
           <div className="payment-method">
             <h2>Payment Method</h2>
             <Form>
-              {/* Payment method form fields */}
               <Form.Group controlId="formCardNumber">
                 <Form.Label>Card Number</Form.Label>
                 <Form.Control type="text" placeholder="Enter card number" />
               </Form.Group>
-              {/* Add more form fields for card expiration, CVV, etc. */}
+
               <div className="buttons">
                 <Button variant="primary">Proceed to Payment</Button>
               </div>

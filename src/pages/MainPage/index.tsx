@@ -22,7 +22,6 @@ const MainPage = () => {
     return <div className="spinner">Error please reload page.</div>;
   }
 
-  //sepete ekleme
   const handleAddToBasket = (product: ProductType) => {
     console.log("dasd", product);
 
@@ -35,7 +34,6 @@ const MainPage = () => {
   return (
     <div className="page-container">
       <h1 className="main-title">Welcome to our Store</h1>{" "}
-      {/* Add a wrapper div with page-container class */}
       <Container className="my-4">
         <Row xs={1} md={2} lg={3} xl={4} className="g-4">
           {data?.products.map((product: ProductType) => (

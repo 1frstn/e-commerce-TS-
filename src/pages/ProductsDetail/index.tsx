@@ -1,4 +1,3 @@
-// ProductDetailPage.js
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Col, Row, Spinner, Button } from "react-bootstrap";
@@ -6,7 +5,6 @@ import { useAppDispatch } from "../../app/store";
 import { addToBasket } from "../../features/basket/basketSlice";
 import { toast } from "react-toastify";
 import { ProductType } from "../../types";
-//import { Link } from "react-router-dom";
 
 const ProductDetailPage = () => {
   const { productId } = useParams();
