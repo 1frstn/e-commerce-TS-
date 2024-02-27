@@ -11,10 +11,9 @@
 
 <h1>Used Library </h1>
 <ul>
-  <li>redux-toolkit-query</li>
+  <li>react-bootstrap</li>
   <li>react-router-dom</li>
   <li>@reduxjs/toolkit</li>
-  <li>react-redux</li>
-  <li>redux-thunk</li>
+  <li>react-toastify</li>
   <li>@splidejs/react-splide</li>
 </ul>
